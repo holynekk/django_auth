@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main.apps.MainConfig',
+    'crispy_forms',
+    'crispy_bootstrap5'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +78,12 @@ WSGI_APPLICATION = 'django_auth.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'denhuqh43fde80',
+        'USER': 'itdgohuvpmnbvu',
+        'PASSWORD': '8109a18cd1b702566f40fcf4cd2198ff7fa64c39f1b80dcdce6aaf99faa91eb6',
+        'HOST': 'ec2-99-80-170-190.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
